@@ -1,0 +1,54 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Historia | La Caffettiera{% endblock %}
+
+{% block active_menu%}
+
+<ul class="navbar-nav mx-auto">
+    <li class="nav-item px-lg-4">
+      <a class="nav-link text-uppercase text-expanded" href="{% url 'home' %}">Inicio</a>
+    </li>
+    <li class="nav-item active px-lg-4">
+      <a class="nav-link text-uppercase text-expanded" href="{% url 'about' %}">Historia</a>
+    </li>
+    <li class="nav-item px-lg-4">
+      <a class="nav-link text-uppercase text-expanded" href="{% url 'services' %}">Servicios</a>
+    </li>
+    <li class="nav-item px-lg-4">
+      <a class="nav-link text-uppercase text-expanded" href="{% url 'store' %}">Visítanos</a>
+    </li>
+    <li class="nav-item px-lg-4">
+      <a class="nav-link text-uppercase text-expanded" href="{% url 'contact' %}">Contacto</a>
+    </li>
+    <li class="nav-item px-lg-4">
+      <a class="nav-link text-uppercase text-expanded" href="{% url 'blog' %}">Blog</a>
+    </li>
+  </ul>
+
+{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<!-- Contenido -->
+<section class="page-section about-heading">
+    <div class="container">
+        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static '/core/img/about.jpg' %}" alt="">
+        <div class="about-heading-content">
+            <div class="row">
+                <div class="col-xl-9 col-lg-10 mx-auto">
+                    <div class="bg-faded rounded p-5">
+                        <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Tradición familiar italiana</span>
+                        <span class="section-heading-lower">Nuestra historia</span>
+                        </h2>
+                        <p>Fundada en 1987 consectetur adipiscing elit. Donec leo dui, vehicula vel dapibus ac, tempus non enim. Nunc tempor vel lacus vel gravida. Nam sit amet pellentesque mi. </p>
+                        <p>Curabitur efficitur pellentesque tellus nec volutpat. In viverra mattis sem, facilisis condimentum mi rutrum ut. Quisque ut pellentesque dui.Nullam eu vehicula metus. Pellentesque id interdum elit. Aenean in efficitur enim.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
